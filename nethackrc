@@ -1,0 +1,1 @@
+OPTIONS=color, autopickup, pickup_types:?!/%=$, name:MrChucho, dogname: Hans Blix
