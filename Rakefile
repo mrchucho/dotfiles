@@ -13,7 +13,7 @@ end
  
 desc "List untracked dot files"
 task :untracked do
-  sh "cd $HOME && find .* ! -type l -maxdepth 0"
+  sh "cd $HOME && find .* ! -type l -maxdepth 0 | grep -v -f .Ignore"
 end
  
 def manifest
