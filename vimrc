@@ -1,4 +1,5 @@
 " General
+" set modeline
 set nocompatible
 set autowrite
 filetype plugin indent on
