@@ -12,3 +12,6 @@ Hirb.enable
 extend Hirb::Console
 
 # require everything in irb/*
+Dir.glob(File.dirname(__FILE__) + '/.irb/**/*.rb').each do |rb|
+  require rb
+end
