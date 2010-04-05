@@ -11,7 +11,6 @@ alias autospec='RUBYLIB=./lib RUBYOPT=-rubygems AUTOFEATURE=true autospec'
 export TERM=xterm-color
 export MANPATH=$MANPATH:/usr/local/man
 
-export PS1="\[\033[33m\h @ \w\033[0m\] \n$ "
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/pgsql/bin
 
@@ -37,13 +36,6 @@ export ACK_COLOR_MATCH="white on_blue"
 # http://mipsisrisc.com/lscolors/
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
-if [ -f $HOME/.s3conf/s3config.sh ]; then
-    . $HOME/.s3conf/s3config.sh
-fi
-if [ -f $HOME/.ec2/ec2.profile ]; then
-    . $HOME/.ec2/ec2.profile
-fi
-
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 # MacPorts Installer addition on 2009-09-25_at_12:30:24: adding an appropriate PATH variable for use with MacPorts.
@@ -60,4 +52,18 @@ export PATH=$PATH:$GOBIN
 # VMWare
 if [ -d /Library/Application\ Support/VMware\ Fusion/ ]; then
   export PATH=$PATH:/Library/Application\ Support/VMware\ Fusion/
+fi
+
+# ======== Customization ========
+
+# TODO combine .s3 and .ec2 under .aws/{ec2,s3}
+if [ -f $HOME/.s3conf/s3config.sh ]; then
+    . $HOME/.s3conf/s3config.sh
+fi
+if [ -f $HOME/.ec2/ec2.profile ]; then
+    . $HOME/.ec2/ec2.profile
+fi
+
+if [ -f $HOME/.ps1 ] ; then
+  . $HOME/.ps1
 fi

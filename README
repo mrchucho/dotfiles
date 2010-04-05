@@ -1,0 +1,9 @@
+
+
+Customization
+=============
+
+* irb  - add Ruby files to $HOME/.irb
+* $PS1 - add $HOME/.ps1 with "export PS1=<your custom prompt>"
+* EC2
+* S3
