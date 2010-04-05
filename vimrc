@@ -72,6 +72,6 @@ map! A  ka
 map! D  ha
 map! C  la
 map! B  ja
-map! L  
+"map! L  
 map! Q  
 map! R  
