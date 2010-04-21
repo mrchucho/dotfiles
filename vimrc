@@ -55,23 +55,3 @@ autocmd BufReadPost *
 
 " Mappings
 vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
-"map     {!}sort -b
-map  h  1G
-map  H  1G
-map  F  G
-map  V  
-map  U  
-"map  T  k
-map  S  j
-map  Q   i
-map  P   x
-map  L   O
-"map  M   dd
-map  K   D
-map  J   DjdG$
-map! A  ka
-map! D  ha
-map! C  la
-map! B  ja
-map! Q  
-map! R  
