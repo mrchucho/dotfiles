@@ -30,12 +30,13 @@ set statusline=%f\ %m\ %h%r%=[%{&encoding}\ %{&fileformat}\ %{strlen(&ft)?&ft:'n
 " Text Formatting
 set autoindent
 set smartindent 
-set nowrap
 set sts=2
 set sw=2
 set ts=4
 set expandtab
 set nosmarttab
+set nowrap
+command! -nargs=* Wrap set wrap linebreak nolist
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
