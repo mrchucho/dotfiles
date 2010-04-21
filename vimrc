@@ -37,6 +37,9 @@ set expandtab
 set nosmarttab
 set nowrap
 command! -nargs=* Wrap set wrap linebreak nolist
+set showbreak=…
+set invlist
+set listchars=tab:▸\ ,eol:¬
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
