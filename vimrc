@@ -40,6 +40,9 @@ command! -nargs=* Wrap set wrap linebreak nolist
 set showbreak=…
 set invlist
 set listchars=tab:▸\ ,eol:¬
+" Text Formatting - Line-wrapping (NOTE to reformat paragraph: gqip)
+" set textwidth=80
+" set formatoptions=tcanq " wrap when inserting and editing
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
@@ -54,7 +57,6 @@ autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"" |
             \ endif
-
 
 " Mappings
 vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
