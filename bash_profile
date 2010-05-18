@@ -12,6 +12,7 @@ alias autospec='RUBYLIB=./lib RUBYOPT=-rubygems AUTOFEATURE=true autospec'
 export TERM=xterm-color
 export MANPATH=$MANPATH:/usr/local/man
 
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/pgsql/bin
 
@@ -67,4 +68,8 @@ fi
 
 if [ -f $HOME/.ps1 ] ; then
   . $HOME/.ps1
+fi
+
+if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+  source $HOME/.rvm/scripts/rvm
 fi
