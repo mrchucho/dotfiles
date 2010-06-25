@@ -1,4 +1,12 @@
+Installing Vim Plugins
+======================
+  vim plugins can be installed (unzipped, untarred, etc.) directly into 
+vim/bundle/{plugin}. For vim plugins that are on github:
 
+dotfiles$ git submodule add http://github.com/{user}/{plugin}.git vim/bundle/{plugin}
+dotfiles$ git submodule init
+...
+dotfiles$ git submodule update # update git-backed plugins
 
 Customization
 =============
