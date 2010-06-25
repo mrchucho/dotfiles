@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'wirble'
 require 'hirb'
+require 'interactive_editor'
 
 IRB.conf[:EVAL_HISTORY] = 1000
 IRB.conf[:SAVE_HISTORY] = 100
