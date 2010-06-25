@@ -4,3 +4,6 @@
 [submodule "vim/bundle/surrond"]
 	path = vim/bundle/surrond
 	url = http://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/scss-syntax"]
+	path = vim/bundle/scss-syntax
+	url = http://github.com/cakebaker/scss-syntax.vim.git
