@@ -72,7 +72,7 @@ nmap <D-k> gk
 nmap <D-4> g$
 nmap <D-6> g^
 nmap <D-0> g^
-map <F5> :RunRubyFocusedContext<CR>
+map <F5> :.Rake<CR>
 
 " Load all plugins from bundles
 call pathogen#runtime_append_all_bundles()
