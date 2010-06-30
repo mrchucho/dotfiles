@@ -22,4 +22,6 @@
     stat = status
     co = checkout
 [core]
-	autocrlf = input
+  autocrlf = input
+[sendemail]
+  smtpserver = /usr/local/bin/msmtp
