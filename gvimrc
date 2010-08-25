@@ -1,11 +1,6 @@
-" set background=light
-" or for black
 set background=dark
 highlight Normal guibg=Black guifg=White
-"set guifont=monaco:h12
-set guifont=DejaVu\ Sans\ Mono\ Bold:h14
-"set guifont=Consolas\ Bold:h14
-set guioptions=-m
-"colorscheme desert 
+set guifont=Consolas\ Bold:h14 " DejaVu\ Sans\ Mono\ Bold
+set guioptions=-m " No Menu Bar
 colorscheme vividchalk
-set lines=40 columns=100
+set lines=40 columns=85
