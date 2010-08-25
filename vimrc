@@ -41,13 +41,14 @@ set showbreak=…
 set invlist
 set listchars=tab:▸\ ,eol:¬
 " Text Formatting - Line-wrapping (NOTE to reformat paragraph: gqip)
-" set textwidth=80
-" set formatoptions=tcanq " wrap when inserting and editing
+set textwidth=80
+set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
 autocmd FileType java set makeprg=ant\ -emacs
 autocmd FileType ebuild set noexpandtab textwidth=80
+" Is this messing up javascript???
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit set tw=68 spell
 autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw
