@@ -1,5 +1,4 @@
 " General
-" set modeline
 set nocompatible
 set autowrite
 filetype plugin indent on
@@ -7,6 +6,7 @@ set wildignore+=*/CVS*
 set wildmode=list:longest
 set grepprg=ack
 set grepformat=%f:%l:%m
+set backspace=indent,eol,start
 
 " Color / Themes
 syntax on
@@ -42,7 +42,7 @@ set invlist
 set listchars=tab:▸\ ,eol:¬
 " Text Formatting - Line-wrapping (NOTE to reformat paragraph: gqip)
 set textwidth=80
-set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
+" set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
@@ -76,4 +76,5 @@ nmap <D-0> g^
 map <F5> :.Rake<CR>
 
 " Load all plugins from bundles
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
