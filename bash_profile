@@ -7,14 +7,11 @@ alias ls='ls -pG'
 alias ll='ls -lpG'
 alias ri='ri -T -fansi'
 alias irb='irb --readline -r irb/completion'
-alias autospec='RUBYLIB=./lib RUBYOPT=-rubygems AUTOFEATURE=true autospec'
 
 export TERM=xterm-color
 export MANPATH=$MANPATH:/usr/local/man
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/usr/local/mysql/bin
-export PATH=$PATH:/usr/local/pgsql/bin
 
 export IRCNICK=MrChucho
 export IRCUSER=MrChucho
@@ -40,20 +37,21 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
-# MacPorts Installer addition on 2009-09-25_at_12:30:24: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-# Go
-export GOROOT=$HOME/Projects/go
-export GOARCH=amd64
-export GOOS=darwin
-export GOBIN=$GOROOT/bin
-export PATH=$PATH:$GOBIN
 
 # VMWare
 if [ -d /Library/Application\ Support/VMware\ Fusion/ ]; then
-  export PATH=$PATH:/Library/Application\ Support/VMware\ Fusion/
+  export PATH=$PATH:/Library/Application\ Support/VMware\ Fusion
+fi
+
+# Git for Mac
+if [ -d /usr/local/git ]; then
+  export PATH=$PATH:/usr/local/git/bin
+fi
+
+# Postgres
+if [ -d /usr/local/pgsql ]; then
+  export PATH=$PATH:/usr/local/pgsql/bin
+  export MANPATH=$MANPATH:/usr/local/pgsql/share/man
 fi
 
 # ======== Customization ========
@@ -70,6 +68,5 @@ if [ -f $HOME/.ps1 ] ; then
   . $HOME/.ps1
 fi
 
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-  source $HOME/.rvm/scripts/rvm
-fi
+# ============= RVM =============
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
