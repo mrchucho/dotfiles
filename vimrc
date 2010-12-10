@@ -1,12 +1,16 @@
 " General
 set nocompatible
 set autowrite
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 set wildignore+=*/CVS*
 set wildmode=list:longest
 set grepprg=ack
 set grepformat=%f:%l:%m
 set backspace=indent,eol,start
+set ignorecase
+set smartcase " don't ignore case if search has mixed case
 
 " Color / Themes
 syntax on
@@ -37,9 +41,9 @@ set expandtab
 set nosmarttab
 set nowrap
 command! -nargs=* Wrap set wrap linebreak nolist
-set showbreak=…
 set invlist
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,trail:•,extends:…
+set showbreak=…
 " Text Formatting - Line-wrapping (NOTE to reformat paragraph: gqip)
 set textwidth=80
 " set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
