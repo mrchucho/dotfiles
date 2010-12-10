@@ -2,7 +2,8 @@
 :benchmark: false
 :verbose: true
 :update_sources: true
-gem: --no-rdoc --no-ri
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
 :sources: 
 - http://gemcutter.org
 - http://gems.rubyforge.org
