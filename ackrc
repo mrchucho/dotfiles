@@ -1,1 +1,4 @@
---type-set=puppet=.pp --type-set=cucumber=.feature
+--type-set=puppet=.pp
+--type-set=cucumber=.feature
+--type-set=coffeescript=.coffee
+--pager=less -r
