@@ -33,7 +33,7 @@ export ACK_COLOR_FILENAME="bold cyan"
 export ACK_COLOR_MATCH="white on_blue"
 
 # http://mipsisrisc.com/lscolors/
-export LSCOLORS="gxfxcxdxbxegedabagacad"
+export LSCOLORS="gxfxcxdxbxegedabagacad" # "gxBxhxDxfxhxhxhxhxcxcx"
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
@@ -69,4 +69,6 @@ if [ -f $HOME/.ps1 ] ; then
 fi
 
 # ============= RVM =============
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
+  source "$HOME/.rvm/scripts/rvm"
+fi

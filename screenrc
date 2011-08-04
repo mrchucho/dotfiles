@@ -11,6 +11,7 @@ termcapinfo xterm 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX:hs:ts=\E]2;:fs=\007:ds=\E]2
 termcap  xtermc 'XT:AF=\E[3%dm:AB=\E[4%dm:AX'
 terminfo xtermc 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX'
 termcapinfo xtermc 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX:hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+termcapinfo xterm* ti@:te@ # enable scrollbars
 
 # auto-screen support; see http://taint.org/wk/RemoteLoginAutoScreen
 # detach on hangup
@@ -20,7 +21,7 @@ startup_message off
 # always use a login shell
 shell -$SHELL
 # restore window contents after using (e.g.) vi
-altscreen on
+# altscreen on
 
 # auto-log
 logfile $HOME/Documents/screen-logs/%Y%m%d-%n.log

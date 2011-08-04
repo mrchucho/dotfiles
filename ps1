@@ -34,4 +34,4 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-export PS1="\[$txtylw\]\h: \w\[$txtrst\]\n\[$undblu\]\$(__git_ps1)\[$txtrst\]$ "
+export PS1="\[$txtylw\]\h: \w\[$txtrst\]\n\[$txtgrn\]\$(__git_ps1)\[$txtrst\]\[$txtcyn\]» \[$txtrst\]"

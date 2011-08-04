@@ -1,6 +1,6 @@
 [user]
     email = mrchucho@mrchucho.net
-    name = mrchucho
+	name = mrchucho
 [color]
     branch = auto
     status = auto
@@ -15,9 +15,12 @@
     local = yellow
     remote = green
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+    # added = yellow
+    # changed = green
+    # untracked = cyan
+  added = green
+  changed = yellow
+  untracked = red
 [alias]
     stat = status
     co = checkout

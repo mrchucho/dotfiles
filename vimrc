@@ -1,3 +1,7 @@
+" Load all plugins from bundles
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 " General
 set nocompatible
 set autowrite
@@ -11,6 +15,7 @@ set grepformat=%f:%l:%m
 set backspace=indent,eol,start
 set ignorecase
 set smartcase " don't ignore case if search has mixed case
+set diffopt=vertical
 
 " Color / Themes
 syntax on
@@ -78,7 +83,3 @@ nmap <D-4> g$
 nmap <D-6> g^
 nmap <D-0> g^
 map <F5> :.Rake<CR>
-
-" Load all plugins from bundles
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
