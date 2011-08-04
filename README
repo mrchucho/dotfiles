@@ -5,8 +5,15 @@ vim/bundle/{plugin}. For vim plugins that are on github:
 
 dotfiles$ git submodule add http://github.com/{user}/{plugin}.git vim/bundle/{plugin}
 dotfiles$ git submodule init
-...
-dotfiles$ git submodule update # update git-backed plugins
+
+* Updating submodules: http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
+  $ git submodule init
+  $ git submodule update
+  $ cd <submodule>
+  $ git co master
+  $ git pull
+  $ cd .. # back to the root dir
+  $ git add <submodule> && git commit -m "Updated <submodule>"
 
 * To add plugin help - :helptags {plugin}/doc
 
