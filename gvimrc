@@ -6,3 +6,4 @@ colorscheme vividchalk
 set lines=40 columns=84
 set colorcolumn=80
 hi ColorColumn ctermbg=lightgrey guibg=#2D2D2D
+set noballooneval
