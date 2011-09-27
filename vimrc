@@ -16,6 +16,8 @@ set backspace=indent,eol,start
 set ignorecase
 set smartcase " don't ignore case if search has mixed case
 set diffopt=vertical
+set nomodeline
+" let mapleader=","
 
 " Color / Themes
 syntax on
@@ -28,6 +30,8 @@ colorscheme desert " vividchalk
 set number
 set vb t_vb=
 set showmatch
+set colorcolumn=80
+hi ColorColumn ctermbg=LightGray ctermfg=DarkGrey
 
 " Status Line
 set report=1
@@ -38,18 +42,19 @@ set statusline=%f\ %m\ %h%r%=[%{&encoding}\ %{&fileformat}\ %{strlen(&ft)?&ft:'n
 
 " Text Formatting
 set autoindent
-set smartindent 
+set smartindent
 set sts=2
 set sw=2
 set ts=4
 set expandtab
 set nosmarttab
 set nowrap
-command! -nargs=* Wrap set wrap linebreak nolist
 set invlist
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:…
 set showbreak=…
-" Text Formatting - Line-wrapping (NOTE to reformat paragraph: gqip)
+" Text Formatting - Line-wrapping
+" NOTE: to reformat paragraph: gqip
+" NOTE: to reformat selection: gq
 set textwidth=80
 " set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
 
@@ -57,7 +62,6 @@ set textwidth=80
 autocmd FileType jsp,html,xml set textwidth=0
 autocmd FileType java set makeprg=ant\ -emacs
 autocmd FileType ebuild set noexpandtab textwidth=80
-" Is this messing up javascript???
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit set tw=68 spell
 autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw
@@ -69,17 +73,16 @@ autocmd BufReadPost *
             \   exe "normal g`\"" |
             \ endif
 
+" Custom Commands
+command! -nargs=* Help :vert help <args>
+command! -nargs=0 Wrap set wrap linebreak nolist
+
 " Mappings
 vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
-"   Navigate Display lines by hold Command
-vmap <D-j> gj
-vmap <D-k> gk
-vmap <D-4> g$
-vmap <D-6> g^
-vmap <D-0> g^
-nmap <D-j> gj
-nmap <D-k> gk
-nmap <D-4> g$
-nmap <D-6> g^
-nmap <D-0> g^
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader><space> :noh<cr>
+nnoremap <leader>q gqip
 map <F5> :.Rake<CR>
+map <F1> :Help<CR>
+nnoremap / /\v
+vnoremap / /\v
