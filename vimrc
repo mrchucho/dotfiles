@@ -2,6 +2,9 @@
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" Use the system clipboard & vim clipboard interchangeably
+set clipboard=unnamed
+
 " General
 set nocompatible
 set autowrite
