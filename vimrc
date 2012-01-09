@@ -68,6 +68,7 @@ autocmd FileType ebuild set noexpandtab textwidth=80
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit set tw=68 spell
 autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw
+autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.go set syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
@@ -85,6 +86,8 @@ vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
+nnoremap <leader>o :only<cr>
+
 map <F5> :.Rake<CR>
 map <F1> :Help<CR>
 nnoremap / /\v
