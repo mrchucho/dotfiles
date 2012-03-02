@@ -1,5 +1,5 @@
 [user]
-    email = mrchucho@mrchucho.net
+	email = mrchucho@mrchucho.net
 	name = mrchucho
 [color]
     branch = auto
@@ -26,5 +26,12 @@
     co = checkout
 [core]
   autocrlf = input
+	excludesfile = /Users/rchurchill/.gitignore_global
 [sendemail]
   smtpserver = /usr/local/bin/msmtp
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
