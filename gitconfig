@@ -1,32 +1,29 @@
 [user]
-	email = mrchucho@mrchucho.net
-	name = mrchucho
+  email = mrchucho@mrchucho.net
+  name = mrchucho
 [color]
-    branch = auto
-    status = auto
-    diff = auto
+  branch = auto
+  status = auto
+  diff = auto
 [color "diff"]
-    meta = yellow
-    frag = cyan
-    old = red
-    new = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "status"]
-    # added = yellow
-    # changed = green
-    # untracked = cyan
   added = green
   changed = yellow
   untracked = red
 [alias]
-    stat = status
-    co = checkout
+  stat = status
+  co = checkout
 [core]
   autocrlf = input
-	excludesfile = /Users/rchurchill/.gitignore_global
+  excludesfile = /Users/rchurchill/.gitignore_global
 [sendemail]
   smtpserver = /usr/local/bin/msmtp
 [difftool "sourcetree"]
@@ -35,3 +32,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[rerere]
+  enabled = 1
