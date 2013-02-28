@@ -21,20 +21,23 @@ set smartcase " don't ignore case if search has mixed case
 set diffopt=vertical
 set nomodeline
 " let mapleader=","
+set cryptmethod=blowfish
 
 " Color / Themes
 syntax on
 set hlsearch
 set mousehide
 set background=dark
-colorscheme desert " vividchalk
+colorscheme vividchalk " desert
 
 " UI
 set number
 set vb t_vb=
 set showmatch
 set colorcolumn=80
-hi ColorColumn ctermbg=LightGray ctermfg=DarkGrey
+highlight ColorColumn ctermbg=LightGray ctermfg=Black guibg=#2D2D2D guifg=#FFFFFF
+highlight LineNr ctermbg=DarkGray ctermfg=LightGray guibg=#2D2D2D guifg=#FFFFFF
+highlight Normal guibg=Black guifg=White
 
 " Status Line
 set report=1
@@ -72,6 +75,7 @@ autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.go set syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
+autocmd BufNewFile,BufRead .passwords set incsearch hlsearch
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"" |
