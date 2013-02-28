@@ -3,8 +3,8 @@ parse_git_branch() {
   git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-alias ls='ls -pG'
-alias ll='ls -lpG'
+alias ls='ls -pahG'
+alias ll='ls -lpahG'
 alias ri='ri -T -fansi'
 alias irb='irb --readline -r irb/completion'
 
@@ -68,7 +68,6 @@ if [ -f $HOME/.ps1 ] ; then
   . $HOME/.ps1
 fi
 
-# ============= RVM =============
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
-  source "$HOME/.rvm/scripts/rvm"
-fi
+# =========== rbenv =============
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
