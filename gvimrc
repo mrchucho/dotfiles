@@ -14,5 +14,5 @@ set colorcolumn=80
 hi ColorColumn guifg=#FFFFFF guibg=#2D2D2D
 highlight Normal guibg=Black guifg=White
 
-set guifont=Consolas\ Bold:h18 " DejaVu\ Sans\ Mono\ Bold
+set guifont=Consolas\ Bold:h14 " DejaVu\ Sans\ Mono\ Bold
 
