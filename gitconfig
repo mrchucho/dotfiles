@@ -1,6 +1,6 @@
 [user]
   email = mrchucho@mrchucho.net
-	name = Ralph Churchill
+  name = Ralph Churchill
 [color]
   branch = auto
   status = auto
@@ -27,10 +27,12 @@
 [sendemail]
   smtpserver = /usr/local/bin/msmtp
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [rerere]
   enabled = 1
+[push]
+  default = simple
