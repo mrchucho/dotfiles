@@ -86,7 +86,8 @@ command! -nargs=* Help :vert help <args>
 command! -nargs=0 Wrap set wrap linebreak nolist
 
 " Mappings
-vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+" Leader key is \
+vmap <leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
