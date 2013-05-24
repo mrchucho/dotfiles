@@ -20,8 +20,8 @@ set ignorecase
 set smartcase " don't ignore case if search has mixed case
 set diffopt=vertical
 set nomodeline
-" let mapleader=","
 set cryptmethod=blowfish
+set noequalalways
 
 " Color / Themes
 syntax on
