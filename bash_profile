@@ -1,3 +1,4 @@
+export GIT_PS1_SHOWDIRTYSTATE=1
 source ~/.git-completion.bash
 parse_git_branch() {
   git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

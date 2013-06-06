@@ -21,6 +21,7 @@
 [alias]
   stat = status
   co = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
   autocrlf = input
   excludesfile = /Users/rchurchill/.gitignore_global
