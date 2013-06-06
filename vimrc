@@ -24,11 +24,11 @@ set cryptmethod=blowfish
 set noequalalways
 
 " Color / Themes
+colorscheme vividchalk " desert
 syntax on
 set hlsearch
 set mousehide
 set background=dark
-colorscheme vividchalk " desert
 
 " UI
 set number
@@ -38,6 +38,7 @@ set colorcolumn=80
 hi ColorColumn ctermbg=LightGray ctermfg=Black guibg=#2D2D2D guifg=#FFFFFF
 hi LineNr ctermbg=DarkGray ctermfg=LightGray guibg=#2D2D2D guifg=#FFFFFF
 hi Normal guibg=Black guifg=White
+hi Search ctermbg=Blue ctermfg=LightGray
 
 " Status Line
 set report=1
