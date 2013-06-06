@@ -38,7 +38,7 @@ set colorcolumn=80
 hi ColorColumn ctermbg=LightGray ctermfg=Black guibg=#2D2D2D guifg=#FFFFFF
 hi LineNr ctermbg=DarkGray ctermfg=LightGray guibg=#2D2D2D guifg=#FFFFFF
 hi Normal guibg=Black guifg=White
-hi Search ctermbg=Blue ctermfg=LightGray
+hi Search cterm=bold ctermbg=Blue ctermfg=White
 
 " Status Line
 set report=1

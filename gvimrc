@@ -13,7 +13,7 @@ set background=dark
 set colorcolumn=80
 hi ColorColumn guifg=#FFFFFF guibg=#2D2D2D
 hi Normal guibg=Black guifg=White
-hi Search guibg=Blue guifg=Gray
+hi Search guibg=Blue guifg=White
 
 " set guifont=Consolas\ Bold:h18 " DejaVu\ Sans\ Mono\ Bold
 set guifont=Menlo\ Regular:h13
