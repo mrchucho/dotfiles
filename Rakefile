@@ -13,7 +13,9 @@ end
  
 desc "List untracked dot files"
 task :untracked do
-  system %Q{ln -s $PWD/Ignore $HOME/.Ignore}
+  unless File.exists?(File.expand_path('~/.Ignore'))
+    system %Q{ln -s $PWD/Ignore $HOME/.Ignore}
+  end
   sh "cd $HOME && find .* ! -type l -maxdepth 0 | grep -v -f .Ignore"
 end
  
