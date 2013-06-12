@@ -4,40 +4,22 @@ parse_git_branch() {
   git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-alias ls='ls -pahG'
-alias ll='ls -lpahG'
-alias ri='ri -T -fansi'
-alias irb='irb --readline -r irb/completion'
+if [ -f $HOME/.alias ]; then
+  . $HOME/.alias
+fi
 
 export TERM=xterm-color
 export MANPATH=$MANPATH:/usr/local/man
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-export IRCNICK=MrChucho
-export IRCUSER=MrChucho
-export IRCNAME=MrChucho
-export IRCSERVER=mrchucho.net
-
-export EDITOR=vi
 
 export HISTIGNORE="&:ls:[bf]g:exit"
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"' # borrowed from RHEL
 
-
-if [ -f $HOME/.inputrc ]; then
-export INPUTRC=$HOME/.inputrc
+if [ -f $HOME/.exports ]; then
+  . $HOME/.exports
 fi
-
-# ack configuration (see: man ack)
-export ACK_COLOR_FILENAME="bold cyan"
-export ACK_COLOR_MATCH="white on_blue"
-
-# http://mipsisrisc.com/lscolors/
-export LSCOLORS="gxfxcxdxbxegedabagacad" # "gxBxhxDxfxhxhxhxhxcxcx"
-
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
-
 
 # VMWare
 if [ -d /Library/Application\ Support/VMware\ Fusion/ ]; then

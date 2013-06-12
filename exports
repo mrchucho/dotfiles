@@ -1,0 +1,19 @@
+export EDITOR=vi
+
+if [ -f $HOME/.inputrc ]; then
+export INPUTRC=$HOME/.inputrc
+fi
+
+# ack configuration (see: man ack)
+export ACK_COLOR_FILENAME="bold cyan"
+export ACK_COLOR_MATCH="white on_blue"
+
+export IRCNICK=MrChucho
+export IRCUSER=MrChucho
+export IRCNAME=MrChucho
+export IRCSERVER=mrchucho.net
+
+# http://mipsisrisc.com/lscolors/
+export LSCOLORS="gxfxcxdxbxegedabagacad" # "gxBxhxDxfxhxhxhxhxcxcx"
+
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
