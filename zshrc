@@ -45,7 +45,7 @@ plugins=(git ruby rails)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/rchurchill/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/Users/rchurchill/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -73,3 +73,12 @@ bindkey -M viins '\e/' vi-search-fix
 
 setopt interactivecomments # comment-out a command, ala bash
 unsetopt correct_all # annoying spelling correction
+unsetopt share_history
+
+if [ -f $HOME/.alias ]; then
+  . $HOME/.alias
+fi
+
+if [ -f $HOME/.exports ]; then
+  . $HOME/.exports
+fi
