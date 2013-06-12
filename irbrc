@@ -9,6 +9,7 @@ end
 IRB.conf[:PROMPT_MODE] = :COLOR
 IRB.conf[:EVAL_HISTORY] = 1000
 IRB.conf[:SAVE_HISTORY] = 100
+IRB.conf[:AUTO_INDENT] = true
 
 # Hirb ---------
 Hirb.enable
