@@ -1,3 +1,5 @@
+" To reload vimrc - :so %
+
 " Load all plugins from bundles
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -38,7 +40,7 @@ set colorcolumn=80
 hi ColorColumn ctermbg=LightGray ctermfg=Black guibg=#2D2D2D guifg=#FFFFFF
 hi LineNr ctermbg=DarkGray ctermfg=LightGray guibg=#2D2D2D guifg=#FFFFFF
 hi Normal guibg=Black guifg=White
-hi Search cterm=bold ctermbg=Blue ctermfg=White
+hi Search cterm=bold ctermbg=Yellow ctermfg=Black
 
 " Status Line
 set report=1
