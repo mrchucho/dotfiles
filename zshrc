@@ -45,7 +45,7 @@ plugins=(git ruby rails)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/rchurchill/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -76,9 +76,13 @@ unsetopt correct_all # annoying spelling correction
 unsetopt share_history
 
 if [ -f $HOME/.alias ]; then
-  . $HOME/.alias
+  source $HOME/.alias
 fi
 
 if [ -f $HOME/.exports ]; then
-  . $HOME/.exports
+  source $HOME/.exports
 fi
+
+# =========== rbenv =============
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
