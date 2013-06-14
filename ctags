@@ -1,0 +1,7 @@
+--recurse=yes
+--exclude=.git
+--exclude=log
+--exclude=tmp
+--exclude=.js
+--extra=+f
+--languages=-JavaScript
