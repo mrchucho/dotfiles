@@ -6,7 +6,7 @@ fi
 
 # ack configuration (see: man ack)
 export ACK_COLOR_FILENAME="bold cyan"
-export ACK_COLOR_MATCH="white on_blue"
+export ACK_COLOR_MATCH="black on_yellow"
 
 export IRCNICK=MrChucho
 export IRCUSER=MrChucho
