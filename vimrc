@@ -95,7 +95,7 @@ nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
 nnoremap <leader>o :only<cr>
-nnoremap <leader>s :setlocal spell spelllang=en_us<cr>
+nnoremap <leader>s :setlocal spell! spelllang=en_us<cr>
 
 map <F5> :.Rake<CR>
 map <F1> :Help<CR>
