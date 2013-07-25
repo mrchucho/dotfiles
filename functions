@@ -1,0 +1,6 @@
+function mark() {
+  echo
+  printf "\e[38;5;$((RANDOM % 255))m*\e[0m"%.0s {1..$COLUMNS}
+  echo
+  echo
+}
