@@ -25,6 +25,7 @@
 [core]
   autocrlf = input
   excludesfile = /Users/rchurchill/.gitignore_global
+  pager = less -F -X
 [sendemail]
   smtpserver = /usr/local/bin/msmtp
 [difftool "sourcetree"]
@@ -37,3 +38,5 @@
   enabled = 1
 [push]
   default = simple
+[pull]
+  rebase = true

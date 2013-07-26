@@ -2,3 +2,6 @@
 tags
 .DS_Store
 TODO
+doc
+public/*.json
+.ackrc
