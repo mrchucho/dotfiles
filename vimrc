@@ -15,7 +15,7 @@ filetype plugin on
 filetype indent on
 set wildignore+=*/CVS*
 set wildmode=list:longest
-set grepprg=ack
+set grepprg=ack\ -k
 set grepformat=%f:%l:%m
 set backspace=indent,eol,start
 set ignorecase
@@ -94,6 +94,7 @@ vmap <leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
+vmap <leader>q gqi
 nnoremap <leader>o :only<cr>
 nnoremap <leader>s :setlocal spell! spelllang=en_us<cr>
 
@@ -107,6 +108,8 @@ ab guarnator guarantor
 ab Guarnator Guarantor
 ab supress suppress
 ab Supress Suppress
+ab unsupress unsuppress
+ab Unsupress Unsuppress
 ab speciality specialty
 ab specialities specialties
 ab Specialities Specialties
