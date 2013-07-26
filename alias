@@ -2,3 +2,4 @@ alias ls='ls -pahG'
 alias ll='ls -lpahG'
 alias ri='ri -T -fansi'
 alias irb='irb --readline -r irb/completion'
+alias less='less -FX' # quit if one screen
