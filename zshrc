@@ -45,7 +45,7 @@ plugins=(git ruby rails)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
