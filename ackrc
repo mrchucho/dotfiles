@@ -1,5 +1,11 @@
+--smart-case
+--sort-files
 --type-set=puppet=.pp
 --type-set=cucumber=.feature
 --type-set=coffeescript=.coffee
 # --pager=less -r
 --ignore-dir=nonces
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=vendor
+--ignore-file=is:tags
