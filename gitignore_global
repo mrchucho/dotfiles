@@ -5,3 +5,5 @@ TODO
 doc
 public/*.json
 .ackrc
+vendor/bundle
+vendor/cache

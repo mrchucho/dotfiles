@@ -17,3 +17,5 @@ export IRCSERVER=mrchucho.net
 export LSCOLORS="gxfxcxdxbxegedabagacad" # "gxBxhxDxfxhxhxhxhxcxcx"
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
+
+export PAGER="less -F -X"
