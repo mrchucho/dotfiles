@@ -114,3 +114,6 @@ ab speciality specialty
 ab specialities specialties
 ab Specialities Specialties
 ab Speciality Specialty
+
+" netrw
+let g:netrw_list_hide='.*\.swp$'
