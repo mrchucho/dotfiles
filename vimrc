@@ -65,7 +65,9 @@ set showbreak=…
 " NOTE: to reformat paragraph: gqip
 " NOTE: to reformat selection: gq
 set textwidth=80
-" set formatoptions=tcnq " auto-wrap text/comments w/ tw, allow format with gq
+" auto-wrap text/comments w/ tw; recognize number lists; allow format with gq;
+" remove comment leaders when joining lines
+set formatoptions+=tcnqj
 
 " Filetypes & Auto Commands
 autocmd FileType jsp,html,xml set textwidth=0
@@ -78,7 +80,9 @@ autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.go set syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
+autocmd BufNewFile,BufRead *.py,*.pyw set expandtab sw=4
 autocmd BufNewFile,BufRead .passwords set incsearch hlsearch
+autocmd BufNewFile,BufRead TODO set comments= formatoptions-=c formatlistpat=^\\s*[0-9√*>+]\\+[\\]:.)}\\t\ ]\\s*
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"" |
