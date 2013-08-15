@@ -75,7 +75,7 @@ autocmd FileType java set makeprg=ant\ -emacs
 autocmd FileType ebuild set noexpandtab textwidth=80
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit set tw=68 spell
-autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw
+autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw spell
 autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
