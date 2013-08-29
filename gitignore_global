@@ -5,5 +5,11 @@ TODO
 doc
 public/*.json
 .ackrc
+
 vendor/bundle
 vendor/cache
+vendor/bin/
+vendor/build_info/
+vendor/bundler/
+vendor/gems/
+vendor/specifications/
