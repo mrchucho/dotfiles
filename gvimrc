@@ -19,3 +19,5 @@ hi Cursor guibg=NONE guifg=NONE gui=reverse
 " set guifont=Consolas\ Bold:h18 " DejaVu\ Sans\ Mono\ Bold
 set guifont=Menlo\ Regular:h13
 
+" Mappings for gvim
+nnoremap <leader>sv :source $MYVIMRC<cr> :source $MYGVIMRC<cr>

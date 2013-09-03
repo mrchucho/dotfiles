@@ -19,6 +19,12 @@ begin
   Hirb.enable
   extend Hirb::Console
 
+  def vert(*args)
+    r = args
+    table r, vertical: true
+    r
+  end
+
   puts "😄" # Smiley
 
 rescue LoadError, RuntimeError => e

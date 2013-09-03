@@ -1,4 +1,5 @@
 " To reload vimrc - :so %
+" OR                :so $MYVIMRC
 
 " Load all plugins from bundles
 call pathogen#helptags()
@@ -75,7 +76,7 @@ autocmd FileType java set makeprg=ant\ -emacs
 autocmd FileType ebuild set noexpandtab textwidth=80
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit set tw=68 spell
-autocmd Filetype cucumber set textwidth=80 formatoptions=tcanqw spell
+autocmd Filetype cucumber setlocal textwidth=80 formatoptions=tcanqw spell
 autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp set filetype=puppet
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
@@ -94,18 +95,21 @@ command! -nargs=0 Wrap set wrap linebreak nolist
 
 " Mappings
 " Leader key is \
-vmap <leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+" nmap: normal mode, vmap: visual mode, imap: insert mode
+" *noremap: don't recursively map
+vnoremap <leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
-vmap <leader>q gqi
+vnoremap <leader>q gqi
 nnoremap <leader>o :only<cr>
 nnoremap <leader>s :setlocal spell! spelllang=en_us<cr>
-
-map <F5> :.Rake<CR>
-map <F1> :Help<CR>
+" map <F5> :.Rake<CR>
+" map <F1> :Help<CR>
 nnoremap / /\v
 vnoremap / /\v
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Abbreviations
 ab guarnator guarantor
