@@ -22,4 +22,4 @@ if [ -f $HOME/.ps1 ] ; then
   . $HOME/.ps1
 fi
 
-source $HOME/.profile
+. $HOME/.profile

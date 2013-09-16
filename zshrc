@@ -75,4 +75,4 @@ setopt interactivecomments # comment-out a command, ala bash
 unsetopt correct_all # annoying spelling correction
 unsetopt share_history
 
-source $HOME/.profile
+. $HOME/.profile
