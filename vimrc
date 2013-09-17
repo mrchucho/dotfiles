@@ -71,19 +71,19 @@ set textwidth=80
 set formatoptions+=tcnqj
 
 " Filetypes & Auto Commands
-autocmd FileType jsp,html,xml set textwidth=0
-autocmd FileType java set makeprg=ant\ -emacs
-autocmd FileType ebuild set noexpandtab textwidth=80
+autocmd FileType jsp,html,xml setlocal textwidth=0
+autocmd FileType java setlocal makeprg=ant\ -emacs
+autocmd FileType ebuild setlocal noexpandtab textwidth=80
 autocmd FileType javascript setlocal nocindent
-autocmd Filetype gitcommit set tw=68 spell
+autocmd Filetype gitcommit setlocal tw=68 spell
 autocmd Filetype cucumber setlocal textwidth=80 formatoptions=tcanqw spell
-autocmd BufNewFile,BufRead *.csv set filetype=csv textwidth=0 formatoptions=
-autocmd BufNewFile,BufRead *.pp set filetype=puppet
-autocmd BufNewFile,BufRead *.ru set filetype=ruby
-autocmd BufNewFile,BufRead *.go set syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
-autocmd BufNewFile,BufRead *.py,*.pyw set expandtab sw=4
-autocmd BufNewFile,BufRead .passwords set incsearch hlsearch
-autocmd BufNewFile,BufRead TODO set comments= formatoptions-=c formatlistpat=^\\s*[0-9√*>+]\\+[\\]:.)}\\t\ ]\\s*
+autocmd BufNewFile,BufRead *.csv setlocal filetype=csv textwidth=0 formatoptions=
+autocmd BufNewFile,BufRead *.pp setlocal filetype=puppet
+autocmd BufNewFile,BufRead *.ru setlocal filetype=ruby
+autocmd BufNewFile,BufRead *.go setlocal syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
+autocmd BufNewFile,BufRead *.py,*.pyw setlocal expandtab sw=4
+autocmd BufNewFile,BufRead .passwords setlocal incsearch hlsearch
+autocmd BufNewFile,BufRead TODO setlocal comments= formatoptions-=c formatlistpat=^\\s*[0-9√*>+]\\+[\\]:.)}\\t\ ]\\s*
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"" |
