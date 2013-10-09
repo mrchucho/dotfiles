@@ -76,7 +76,7 @@ autocmd FileType java setlocal makeprg=ant\ -emacs
 autocmd FileType ebuild setlocal noexpandtab textwidth=80
 autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit setlocal tw=68 spell
-autocmd Filetype cucumber setlocal textwidth=80 formatoptions=tcanqw spell
+autocmd Filetype cucumber setlocal tw=0 formatoptions= spell
 autocmd BufNewFile,BufRead *.csv setlocal filetype=csv textwidth=0 formatoptions=
 autocmd BufNewFile,BufRead *.pp setlocal filetype=puppet
 autocmd BufNewFile,BufRead *.ru setlocal filetype=ruby
@@ -110,6 +110,10 @@ nnoremap / /\v
 vnoremap / /\v
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" symbolize string
+nnoremap <leader>S Br:$xB
+" search for current visual selection
+vnoremap <leader>* yq/p<cr>
 
 " Abbreviations
 ab guarnator guarantor
@@ -125,3 +129,4 @@ ab Speciality Specialty
 
 " netrw
 let g:netrw_list_hide='.*\.swp$'
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
