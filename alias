@@ -1,5 +1,5 @@
-alias ls='ls -pahGF'
-alias ll='ls -lpahGF'
+alias ls='ls -phGF'
+alias ll='ls -lphGF'
 alias ri='ri -T -fansi'
 alias irb='irb --readline -r irb/completion'
 alias less='less -FX' # quit if one screen
