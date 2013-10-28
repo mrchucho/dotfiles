@@ -2,8 +2,7 @@
 " OR                :so $MYVIMRC
 
 " Load all plugins from bundles
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " Use the system clipboard & vim clipboard interchangeably
 set clipboard=autoselect " unnamed
