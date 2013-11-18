@@ -74,5 +74,6 @@ bindkey -M viins '\e/' vi-search-fix
 setopt interactivecomments # comment-out a command, ala bash
 unsetopt correct_all # annoying spelling correction
 unsetopt share_history
+bindkey -M vicmd v edit-command-line # open command in editor
 
 . $HOME/.profile
