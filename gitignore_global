@@ -1,3 +1,4 @@
+.swp
 .*.sw[op]
 tags
 .DS_Store
@@ -13,3 +14,5 @@ vendor/build_info/
 vendor/bundler/
 vendor/gems/
 vendor/specifications/
+
+schema.xml

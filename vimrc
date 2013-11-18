@@ -15,7 +15,7 @@ filetype plugin on
 filetype indent on
 set wildignore+=*/CVS*
 set wildmode=list:longest
-set grepprg=ack\ -k
+set grepprg=ack\ -k\ -C3
 set grepformat=%f:%l:%m
 set backspace=indent,eol,start
 set ignorecase
@@ -24,6 +24,8 @@ set diffopt=vertical
 set nomodeline
 set cryptmethod=blowfish
 set noequalalways
+" Something is setting path, so path+= doesn't seem to work very well...
+set path=.
 
 " Color / Themes
 colorscheme vividchalk " desert
