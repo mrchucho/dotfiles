@@ -79,7 +79,7 @@ autocmd FileType javascript setlocal nocindent
 autocmd Filetype gitcommit setlocal tw=68 spell
 autocmd Filetype cucumber setlocal tw=0 formatoptions= spell
 autocmd BufNewFile,BufRead *.csv setlocal filetype=csv textwidth=0 formatoptions=
-autocmd BufNewFile,BufRead *.pp setlocal filetype=puppet
+autocmd BufNewFile,BufRead *.pp setlocal filetype=puppet textwidth=0
 autocmd BufNewFile,BufRead *.ru setlocal filetype=ruby
 autocmd BufNewFile,BufRead *.go setlocal syntax=go noexpandtab smarttab sts=8 sw=4 ts=4
 autocmd BufNewFile,BufRead *.py,*.pyw setlocal expandtab sw=4
