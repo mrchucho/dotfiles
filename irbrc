@@ -21,6 +21,16 @@ begin
     $stderr.puts 'Skipping PRY...'
   end
 
+  begin
+    require 'awesome_print'
+    AwesomePrint.defaults = {
+      index: false, # don't show array indices
+      indent: -2, # use negative to left justify
+    }
+  rescue LoadError
+    $stderr.puts 'Skipping awesome print...'
+  end
+
   require 'irb/completion'
 
   # http://stackoverflow.com/questions/8806643/colorized-output-breaks-linewrapping-with-readline
