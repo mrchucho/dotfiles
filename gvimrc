@@ -1,6 +1,10 @@
 set guioptions-=m " No Menu Bar
 set guioptions-=T " Remove toolbar
 set guioptions-=t " tear off menu
+set guioptions-=r " right-, left-hand scrollbars off
+set guioptions-=R " even when there's a vertical split
+set guioptions-=l
+set guioptions-=L
 set guioptions+=c " :ex command instead of modal
 
 set noballooneval
