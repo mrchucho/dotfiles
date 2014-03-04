@@ -13,6 +13,7 @@ set autowrite
 filetype on
 filetype plugin on
 filetype indent on
+set complete=.,b,u,t
 set wildignore+=*/CVS*
 set wildmode=list:longest
 set grepprg=ack\ -k\ -C3

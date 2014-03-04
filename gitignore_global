@@ -14,5 +14,6 @@ vendor/build_info/
 vendor/bundler/
 vendor/gems/
 vendor/specifications/
+vendor/extensions/
 
 schema.xml

@@ -4,3 +4,4 @@
 --exclude=tmp
 --exclude=.js
 --languages=-JavaScript
+--sort=yes
