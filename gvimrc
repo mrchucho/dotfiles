@@ -7,7 +7,6 @@ set guioptions-=l
 set guioptions-=L
 set guioptions+=c " :ex command instead of modal
 
-set noballooneval
 set lines=40 columns=84
 
 " Theme
@@ -25,3 +24,5 @@ set guifont=Menlo\ Regular:h13
 
 " Mappings for gvim
 nnoremap <leader>sv :source $MYVIMRC<cr> :source $MYGVIMRC<cr>
+
+set noballooneval
