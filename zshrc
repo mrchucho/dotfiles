@@ -61,6 +61,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+source /usr/local/share/zsh/site-functions/_aws
 # Fix /
 vi-search-fix() {
   zle vi-cmd-mode
@@ -73,7 +74,12 @@ bindkey -M viins '\e/' vi-search-fix
 
 setopt interactivecomments # comment-out a command, ala bash
 unsetopt correct_all # annoying spelling correction
-unsetopt share_history
+unsetopt share_history # disable shared history
 bindkey -M vicmd v edit-command-line # open command in editor
+
+# Online Help
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
 
 . $HOME/.profile

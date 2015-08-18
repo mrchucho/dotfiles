@@ -9,4 +9,5 @@
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=coverage
+--ignore-dir=spec/reports
 --ignore-file=is:tags

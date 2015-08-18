@@ -1,3 +1,4 @@
+.npm
 .swp
 .*.sw[op]
 tags
@@ -7,13 +8,44 @@ doc
 public/*.json
 .ackrc
 
+.bundle
+vendor/ruby
 vendor/bundle
-vendor/cache
-vendor/bin/
-vendor/build_info/
-vendor/bundler/
-vendor/gems/
-vendor/specifications/
-vendor/extensions/
+# vendor/cache
+# vendor/bin/
+# vendor/build_info/
+# vendor/bundler/
+# vendor/gems/
+# vendor/specifications/
+# vendor/extensions/
+coverage
 
-schema.xml
+#schema.xml
+
+# platform config files
+config/autosuggest_keywords*.yml
+config/procedures*.yml
+config/admin_client.yml
+config/costume_client.yml
+config/etl_client.yml
+config/hipchat.yml
+config/memcached*.yml
+config/mongoid.yml
+config/prs_client.yml
+config/redis.yml
+config/saml.yml
+config/sidekiq.yml
+config/sunspot.yml
+config/skylight*.yml
+config/default_procedure_mappings*.yml
+config/etl_schedule*.rb
+config/users*.yml
+config/prss*.yml
+config/rollout*.yml
+config/statsd*.yml
+config/hipchat*.yml
+config/searchable*.yml
+
+# rcov reports
+features/reports
+spec/reports

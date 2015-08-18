@@ -27,6 +27,7 @@ set cryptmethod=blowfish
 set noequalalways
 " Something is setting path, so path+= doesn't seem to work very well...
 set path=.
+set splitright
 
 " Color / Themes
 colorscheme vividchalk " desert
@@ -89,6 +90,7 @@ autocmd BufNewFile,BufRead *.py,*.pyw setlocal expandtab sw=4
 autocmd BufNewFile,BufRead .passwords setlocal incsearch hlsearch
 autocmd BufNewFile,BufRead *.txt setlocal comments= formatoptions-=c formatlistpat=^\\s*[0-9√*>+]\\+[\\]:.)}\\t\ ]\\s*
 autocmd BufNewFile,BufRead TODO  setlocal comments= formatoptions-=c formatlistpat=^\\s*[0-9√*>+]\\+[\\]:.)}\\t\ ]\\s*
+autocmd BufNewFile,BufRead *.template setlocal filetype=javascript " textwidth=0 formatoptions=
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
             \   exe "normal g`\"" |
@@ -102,7 +104,7 @@ command! -nargs=0 Wrap set wrap linebreak nolist
 " Leader key is \
 " nmap: normal mode, vmap: visual mode, imap: insert mode
 " *noremap: don't recursively map
-vnoremap <leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+vnoremap <leader>g :<C-U>!/usr/local/bin/git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>q gqip
 vnoremap <leader>q gqi

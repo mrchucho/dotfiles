@@ -27,3 +27,17 @@ if [ -d /usr/local/pgsql ]; then
   export PATH=$PATH:/usr/local/pgsql/bin
   export MANPATH=$MANPATH:/usr/local/pgsql/share/man
 fi
+
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+
+# # NPM
+# export npm_config_prefix=.npm
+# export PATH=$PATH:./.npm/bin:./node_modules/.bin
+
+# Platform Config
+export PLATFORM_CONFIG_DIR=~/Projects/platform-provisioning/modules/platform/files/clients
+export PLATFORM_SOLR_HOME_DIR=~/Projects/platform-provisioning/modules/solr/files/solr_home
+
+# AWS
+export AWS_REGION=us-east-1

@@ -2,4 +2,4 @@ alias ls='ls -phGF'
 alias ll='ls -lphGF'
 alias ri='ri -T -fansi'
 alias irb='irb --readline -r irb/completion'
-alias less='less -FX' # quit if one screen
+alias less='less -FXR' # quit if one screen, handle ANSI colors

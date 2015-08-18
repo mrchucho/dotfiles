@@ -26,3 +26,4 @@ set guifont=Menlo\ Regular:h13
 nnoremap <leader>sv :source $MYVIMRC<cr> :source $MYGVIMRC<cr>
 
 set noballooneval
+set balloonexpr=
