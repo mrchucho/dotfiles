@@ -1,7 +1,13 @@
 --recurse=yes
 --exclude=.git
+--exclude=coverage
+--exclude=doc
 --exclude=log
+--exclude=reports
 --exclude=tmp
---exclude=.js
+--exclude=vendor
+--exclude=*.js
+--exclude=*.json
+--exclude=*.yml
 --languages=-JavaScript
 --sort=yes
