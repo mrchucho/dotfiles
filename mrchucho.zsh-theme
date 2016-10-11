@@ -5,7 +5,7 @@
 #
 # http://en.wikipedia.org/wiki/Eigengrau
 
-PROMPT=$'%{$fg[yellow]%}%m %{$reset_color%}%{$fg_bold[white]%}[%~]%{$reset_color%} $(git_prompt_info)\
+PROMPT=$'%{$fg[yellow]%}%m %{$reset_color%}%{$fg_bold[white]%}[%~]%{$reset_color%} $(git_prompt_info) $(/Users/rchurchill/Projects/platform-infrastructure/bin/sandbox ps1)\
 %{$fg[blue]%}»%{$reset_color%} '
 #RPROMPT=$'%{$FG[235]%}%D{%Y-%m-%d %H:%M:%S}%{$reset_color%}'
 

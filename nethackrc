@@ -1,1 +1,14 @@
-OPTIONS=color, autopickup, pickup_types:?!/%=$, name:MrChucho, dogname: Hans Blix
+OPTIONS=color
+OPTIONS=menucolors
+OPTIONS=msg_window:c
+OPTIONS=lit_corridor
+OPTIONS=autopickup
+OPTIONS=pickup_types:?!/(=$
+OPTIONS=name:MrChucho
+OPTIONS=dogname: Hans Blix
+OPTIONS=hilite_pet
+OPTIONS=showexp,showscore,time,showrace
+OPTIONS=disclose:+i+a+g+c+v
+OPTIONS=boulder:0
+#OPTIONS=symset:IBMgraphics
+OPTIONS=DECgraphics

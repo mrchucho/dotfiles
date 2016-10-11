@@ -19,8 +19,10 @@ hi Normal guibg=Black guifg=White
 hi Search guibg=Yellow guifg=Black
 hi Cursor guibg=NONE guifg=NONE gui=reverse
 
-" set guifont=Consolas\ Bold:h18 " DejaVu\ Sans\ Mono\ Bold
-set guifont=Menlo\ Regular:h13
+" set guifont=Consolas\ Bold:h18
+" set guifont=InputMono\ ExLight:h13
+" set guifont=Menlo\ Regular:h13
+set guifont=Hack:h13
 
 " Mappings for gvim
 nnoremap <leader>sv :source $MYVIMRC<cr> :source $MYGVIMRC<cr>

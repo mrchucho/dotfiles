@@ -28,6 +28,7 @@ set noequalalways
 " Something is setting path, so path+= doesn't seem to work very well...
 set path=.
 set splitright
+set breakindent
 
 " Color / Themes
 colorscheme vividchalk " desert
