@@ -24,6 +24,7 @@ coverage
 #schema.xml
 
 # platform config files
+config/feature_flag*.yml
 config/autosuggest_keywords*.yml
 config/procedures*.yml
 config/admin_client.yml
@@ -35,7 +36,7 @@ config/mongoid.yml
 config/prs_client.yml
 config/redis.yml
 config/saml.yml
-config/sidekiq.yml
+config/sidekiq*.yml
 config/sunspot.yml
 config/skylight*.yml
 config/default_procedure_mappings*.yml
@@ -46,7 +47,32 @@ config/rollout*.yml
 config/statsd*.yml
 config/hipchat*.yml
 config/searchable*.yml
+config/msa_users*.yml
+config/secrets.yml
+config/rabbitmq*
+config/benchmark_endpoints.txt
+config/deploy/scratch.rb
+config/*/idp_metadata.xml
+config/api_client*
+config/jwt*
+config/qa
+config/uat
+config/demo
+config/production
+config/secrets*.yml
+config/translation_keys*.yml
+config/sortable_datum_bucket.yml
+config/schedule*.yml
+config/disclaimers*.yml
+config/networks*.yml
+config/provider_types*.yml
 
 # rcov reports
 features/reports
 spec/reports
+
+boxes/app-ops.yml
+boxes/travis.yml
+boxes/solr.yml
+
+db/FullPGDump*
