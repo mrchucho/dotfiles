@@ -141,3 +141,4 @@ ab Identifer Identifier
 " netrw
 let g:netrw_list_hide='.*\.swp$'
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+let ruby_spellcheck_strings = 1
