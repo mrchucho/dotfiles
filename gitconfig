@@ -20,11 +20,12 @@
   changed = yellow
   untracked = red
 [alias]
-  stat = status -sb
+  stat = status -b --untracked=no
   co = checkout
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   cm = commit -ev
   cma = commit -eav
+  recent = branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"
 [core]
   autocrlf = input
   excludesfile = /Users/rchurchill/.gitignore_global
